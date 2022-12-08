@@ -1,0 +1,141 @@
+class proj1
+{
+    static void Main()
+    {
+        TextColor(ConsoleColor.Yellow);
+        MenuFace();
+        MenuFunction();
+       
+    }
+
+    private static void MenuFace()
+    {
+        
+        Console.WriteLine("──▄▀▀▀▀▄▄▄▀▀▀▀▀▀▀▀▀▄\t\t\t\t ||SHAKERIES||");
+        Console.WriteLine("▄▀──────────────────▀▀▄");
+        Console.WriteLine("█─────────────────────▀▀▄\t\t\t ||WELCOME TO SHAKERIES||");
+        Console.WriteLine("█───▄▀▀▀▀▀▀▄────────────█------------------------||Here is our mascot Lazy Chie|| ");
+        Console.WriteLine("█─█─────────────▀▀▄▀─▀▀▄───▀▄\t\t\t ||Please choose your desire order in our menu||");
+        Console.WriteLine("█─█─────────────▀▀▄▀─▀▀▄───▀▄");
+        Console.WriteLine("█─█─▀▀▄──▄████▄───█──────────█\t\t\t\t ||MENU||");
+        Console.WriteLine("█─█──────██████▄──█─▀▀▀▄──────█");
+        Console.WriteLine("█─█─▄▄▄──███████──█────────────█  ╔╦═╦╦╗╔╦══╦══╦═╦══╦╗");
+        Console.WriteLine("█─█▄─────▀██████──█───▄█████▄──█  ║║░╩╣║║║░░║╔═╣═╣░░║║");
+        Console.WriteLine("█──█──▄▄▀─▀████▀──█───███████──█  ║║░░║╚╝║╔╗╣╚╝║═╣╔╗╣║  [1] ||45.00 PHP");
+        Console.WriteLine("█──▀▄───────────▄▀█───███████──█  ║╚══╩══╩╝╚╩══╩═╩╝╚╝║");
+        Console.WriteLine("█────▀▀▄▄▄▄▄▄▄▄▀▀─█▄──▀█████▀──█  ██ ███ ███ ███ █╬█ ██ ███ ███ █");
+        Console.WriteLine("█──────────────▄───█───────────█  █▄ █▄█ █▄█ █╬▄ █▄█ █▄ ╬█╬ ╬█╬ █  [2] ||60.00 PHP");
+        Console.WriteLine("█──────────▄────▀▄─▀█▄▄▄▄▄▄▄▀▀▀   ▄█ █╬╬ █╬█ █▄█ █╬█ █▄ ╬█╬ ╬█╬ █");
+        Console.WriteLine("█───────────▀▄───█──▄▄▄▄▀         █▄┼▄█ ███ █┼┼█ ████ ███ ███ ███ ███");
+        Console.WriteLine("█────────────█───█──█             █┼█┼█ █▄█ ██▄█ █┼▄▄ █┼█ █▄█ ┼█┼ █▄┼  [3] ||30.00 PHP");
+        Console.WriteLine("█────────────█───█──█             █┼┼┼█ █┼█ █┼██ █▄▄█ █▄█ █┼┼ ▄█▄ █▄▄");
+        Console.WriteLine("█───────────▄▀──█───█");
+        Console.WriteLine("█─────────▄▀───█────█             ╔╦═╦══╦╦═╦═╦╗");
+        Console.WriteLine("█─────────█───█─────█             ║║═╣░░║║═╣╚╣║");
+        Console.WriteLine("█─────────▀█▄▄▀─────█             ║║╔╣╔╗╣║═╬╗║║  [4] ||40.00 PHP");
+        Console.WriteLine("█──────────────────▄▀             ║╚╝╚╝╚╩╩═╩═╝║");
+        Console.WriteLine("█─────▄▀▀▀▄▄───────▀▄");
+        Console.WriteLine("█─────█────▀▀▀▀▄▄▄▄▄▀             ███ ███ ███ ┼┼ ███ ███ ███");
+        Console.WriteLine("█─────▀▀▄                         ┼█┼ █┼┼ █▄┼ ┼┼ ┼█┼ █▄┼ █▄█  [1] ||15.55 PHP");
+        Console.WriteLine("█────────▀▀▄                      ▄█▄ ███ █▄▄ ┼┼ ┼█┼ █▄▄ █┼█");
+        Console.WriteLine("█─────▄▄▄▄▄▀");
+        Console.WriteLine("█─▀▄─█                            ███ ███ █┼█ ███");
+        Console.WriteLine("█─▀──█                            █┼┼ █┼█ ██▄ █▄┼  [2] ||16.69 PHP");
+        Console.WriteLine("█────█                            ███ █▄█ █┼█ █▄▄");
+    }
+    private static void TextColor(ConsoleColor myColor)
+    {
+        Console.ForegroundColor = myColor;
+    }
+    private static void MenuFunction()
+    {
+        double Burger = 45.00;
+        double Spaghetti = 60.00;
+        double MangoPie = 30.00;
+        double Fries = 40.00;
+        double IceTea = 15.55;
+        double Coke = 16.69;
+        double AmountOfSaleBurger = 0;
+        double AmountOfSaleSpaghetti = 0;
+        double AmountOfSaleMangoPie = 0;
+        double AmountOfSaleFries = 0;
+        double AmountOfSaleCoke = 0;
+        double AmountOfSaleIceTea = 0;
+
+        double total;
+
+        Console.WriteLine("\t");
+        Console.WriteLine("\t\t█▄┼▄█ ███ ███ █┼┼");
+        Console.WriteLine("\t\t█┼█┼█ █▄┼ █▄█ █┼┼");
+        Console.WriteLine("\t\t█┼┼┼█ █▄▄ █┼█ █▄█");
+        Console.Write("||What is your Meal?||: ");
+        double Meal = Convert.ToDouble(Console.ReadLine());
+        Console.Write("||How many?||: ");
+        double MealQty = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("\t\t██▄ ███ █ █╬╬█ █╬█ ██");
+        Console.WriteLine("\t\t█╬█ █▄╬ █ ██▄█ ██▄ █▄");
+        Console.WriteLine("\t\t███ █╬█ █ █╬██ █╬█ ▄█");
+        Console.Write("||What is your drinks?||: ");
+        double Drinks = Convert.ToDouble(Console.ReadLine());
+        Console.Write("||How many?||: ");
+        double DrinksQty = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("\t\t");
+        Console.WriteLine("\t\t╔╦══╦═╦══╗╔═╦╦╦═╦═╦╦╦═╦═╗");
+        Console.WriteLine("\t\t║╠╗╔╣╦╣║║║║║║╔╣╠║╦╣╔╣╦╣╠║");
+        Console.WriteLine("\t\t╚╝╚╝╚═╩╩╩╝╚═╩╝╚═╩═╩╝╚═╩═╝");
+        Console.WriteLine("\t\t");
+        
+            switch (Meal)
+            {
+                case 1:
+                    Console.WriteLine($"Burger || 45.00 PHP X {MealQty} = {MealQty * Burger}");
+                    AmountOfSaleBurger = MealQty * Burger;
+                    break;
+                case 2:
+                    Console.WriteLine($"Spaghetti || 60.00 PHP X {MealQty} = {MealQty * Spaghetti}");
+                    AmountOfSaleSpaghetti = MealQty * Spaghetti;
+                    break;
+                case 3:
+                    Console.WriteLine($"Mangopie || 30.00 PHP X {MealQty} = {MealQty * MangoPie}");
+                    AmountOfSaleMangoPie = MealQty * MangoPie;
+                    break;
+                case 4:
+                    Console.WriteLine($"Fries || 40.00 PHP X {MealQty} = {MealQty * Fries}");
+                    AmountOfSaleFries = MealQty * Fries;
+                    break;
+            }
+            switch (Drinks)
+            {
+                case 1:
+                    Console.WriteLine($"Ice Tea || 15.55 PHP X {DrinksQty} = {DrinksQty * IceTea}");
+                    AmountOfSaleIceTea = DrinksQty * IceTea;
+                    break;
+                case 2:
+                    Console.WriteLine($"Coke || 16.69 PHP X {DrinksQty} = {DrinksQty * Coke}");
+                    AmountOfSaleCoke = DrinksQty * Coke;
+                    break;
+            
+            }
+            
+        total = AmountOfSaleBurger + AmountOfSaleSpaghetti + 
+            AmountOfSaleMangoPie + AmountOfSaleFries + AmountOfSaleCoke + AmountOfSaleIceTea;
+        Console.WriteLine($"||Total Amount is||: {total}");
+        Console.Write("||How much is your cash?||: ");
+        double cash = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("\t\t");
+
+        Console.WriteLine("\t\t███ ██ ██ ██ █ ███ ███");
+        Console.WriteLine("\t\t█▄╬ █▄ █╬ █▄ █ █▄█ ╬█╬");
+        Console.WriteLine("\t\t█╬█ █▄ ██ █▄ █ █╬╬ ╬█╬");
+        Console.WriteLine("\t\t");
+        Console.WriteLine($"I receive [{cash} pesos] your change is {cash - total}");
+        Console.WriteLine("\t\t||SHAKERIES||\t");
+        Console.WriteLine("\t\t");
+        Console.WriteLine("\t\t██ █╬╬█ ╬█ ███ █╬█");
+        Console.WriteLine("\t\t█▄ ██▄█ ╬█ █╬█ █▄█");
+        Console.WriteLine("\t\t█▄ █╬██ ██ █▄█ ╬█╬");
+
+        Console.ReadKey();
+    }
+}
